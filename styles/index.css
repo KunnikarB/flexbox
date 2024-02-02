@@ -7,6 +7,9 @@
 body {
   background-color: #370617;
   text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .boxes {
@@ -18,9 +21,10 @@ body {
   justify-content: center;
   align-items: center;
   margin: 20px;
+  flex-wrap: wrap;
 }
 
-.box {
+.container {
   width: 468px;
   height: 160px;
   display: flex;
@@ -29,23 +33,24 @@ body {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   margin: 10px;
   padding: 10px;
-  flex-shrink: 0;
+  
 }
 
-.flex-item {
+.item {
   width: 78px;
   height: 78px;
   margin: 10px;
   border-radius: 4px;
   background: #9D0208;
   color: white;
+  
 }
 
-.flex-item-1{
+.flex-end {
   align-items: flex-end;
 }
 
-.flex-item-2 {
+.item-2 {
   width: 78px;
   min-height: 78px;
   margin: 10px;
@@ -68,28 +73,20 @@ body {
 flex-shrink: 1;
 }
 
-.flex-item-3 {
+.flex-end-center {
   justify-content: flex-end;
   align-items: center;
 }
 
-.flex-item-4 {
+.space-between {
   justify-content: space-between;
   
 }
 
-.flex-item-5 {
-  width: 78px;
-  height: auto;
-  margin: 10px;
-  border-radius: 4px;
-  background: #9D0208;
-  color: white; 
-  align-items: baseline;
-}
-.last-child {
+.self-end {
   align-self: end;
 }
+
 
 .evenly {
   justify-content: space-evenly; 
@@ -99,13 +96,10 @@ flex-shrink: 1;
   align-items: baseline;
 }
 
-.flex-item-6 {
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-}
-
 .grow {
   flex-grow: 1;
 }
 
+.self-stretch {
+  align-self: stretch;
+}
